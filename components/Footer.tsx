@@ -64,7 +64,7 @@ export default function Footer() {
           <div>
             <h3 className="text-lg font-semibold mb-4">Contacto</h3>
             <div className="space-y-2 text-gray-300">
-              <p>📧 info@aider.com</p>
+              <p>📧 info@aider.cloud</p>
               <p>📞 +54 11 1234-5678</p>
               <p>📍 Buenos Aires, Argentina</p>
             </div>

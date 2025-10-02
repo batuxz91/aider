@@ -42,7 +42,7 @@ export default function Contact() {
           {/* Contact Form */}
           <div className="bg-gray-50 rounded-2xl p-8">
             <h3 className="text-2xl font-semibold text-gray-900 mb-6">
-              Regístrate Gratis
+              Registro Gratuito
             </h3>
             <form onSubmit={handleSubmit} className="space-y-6">
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
@@ -124,12 +124,12 @@ export default function Contact() {
                 />
               </div>
 
-              <button
-                type="submit"
-                className="w-full bg-primary-600 text-white py-4 px-6 rounded-lg font-semibold hover:bg-primary-700 transition-colors shadow-lg"
+              <a
+                href="/register"
+                className="w-full bg-primary-600 text-white py-4 px-6 rounded-lg font-semibold hover:bg-primary-700 transition-colors shadow-lg text-center inline-block"
               >
-                Crear Cuenta Gratuita
-              </button>
+                Registro Gratuito
+              </a>
             </form>
           </div>
 
@@ -148,8 +148,8 @@ export default function Contact() {
                   </div>
                   <div>
                     <h4 className="text-lg font-semibold text-gray-900">Email</h4>
-                    <p className="text-gray-600">info@aider.com</p>
-                    <p className="text-gray-600">soporte@aider.com</p>
+                    <p className="text-gray-600">info@aider.cloud</p>
+                    <p className="text-gray-600">soporte@aider.cloud</p>
                   </div>
                 </div>
 

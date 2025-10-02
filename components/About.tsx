@@ -47,10 +47,10 @@ export default function About() {
                 Conocer Más
               </a>
               <a
-                href="/registro"
+                href="/register"
                 className="border-2 border-primary-600 text-primary-600 px-6 py-3 rounded-lg font-semibold hover:bg-primary-600 hover:text-white transition-colors text-center"
               >
-                Prueba Gratuita
+                Registro Gratuito
               </a>
             </div>
           </div>

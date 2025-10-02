@@ -7,9 +7,9 @@ export default function Services() {
       icon: "💰"
     },
     {
-      title: "Servicios Agropecuarios",
-      description: "15 servicios predefinidos del sector: cosecha, siembra, pulverización, embolsado, transporte y más.",
-      features: ["15 servicios especializados", "Categorías de gastos específicas", "Control de maquinaria", "Proyectos estacionales"],
+      title: "Servicios Agropecuarios Personalizables",
+      description: "Servicios sugeridos del sector + capacidad de crear servicios personalizados según tu modelo de negocio.",
+      features: ["Servicios sugeridos", "Servicios personalizados", "Categorías configurables", "Adaptable a tu negocio"],
       icon: "🌾"
     },
     {
@@ -73,10 +73,10 @@ export default function Services() {
 
         <div className="text-center mt-12">
           <a
-            href="/registro"
+            href="/register"
             className="inline-flex items-center bg-primary-600 text-white px-8 py-4 rounded-lg text-lg font-semibold hover:bg-primary-700 transition-colors shadow-lg"
           >
-            Prueba Gratuita 14 Días
+            Registro Gratuito
             <svg className="ml-2 w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
             </svg>

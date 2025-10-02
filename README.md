@@ -156,7 +156,7 @@ colors: {
 ## 📞 Soporte
 
 Para soporte técnico o consultas sobre el sitio web:
-- Email: soporte@aider.com
+- Email: soporte@aider.cloud
 - Teléfono: +54 11 1234-5678
 
 ## 📄 Licencia

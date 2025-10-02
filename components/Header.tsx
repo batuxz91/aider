@@ -43,13 +43,19 @@ export default function Header() {
           </nav>
 
           {/* CTA Button */}
-          <div className="hidden md:flex">
-            <Link
-              href="/registro"
+          <div className="hidden md:flex space-x-2">
+            <a
+              href="/login"
+              className="text-primary-600 px-4 py-2 rounded-lg hover:bg-primary-50 transition-colors font-medium"
+            >
+              Login
+            </a>
+            <a
+              href="/register"
               className="bg-primary-600 text-white px-6 py-2 rounded-lg hover:bg-primary-700 transition-colors font-medium"
             >
-              Prueba Gratuita
-            </Link>
+              Registro
+            </a>
           </div>
 
           {/* Mobile menu button */}
@@ -91,13 +97,19 @@ export default function Header() {
               <Link href="/blog" className="block px-3 py-2 text-base font-medium text-gray-700 hover:text-primary-600">
                 Blog
               </Link>
-              <div className="pt-4">
-                <Link
-                  href="/registro"
+              <div className="pt-4 space-y-2">
+                <a
+                  href="/login"
+                  className="block w-full text-primary-600 px-6 py-3 rounded-lg hover:bg-primary-50 transition-colors font-medium text-center border border-primary-600"
+                >
+                  Login
+                </a>
+                <a
+                  href="/register"
                   className="block w-full bg-primary-600 text-white px-6 py-3 rounded-lg hover:bg-primary-700 transition-colors font-medium text-center"
                 >
-                  Prueba Gratuita
-                </Link>
+                  Registro
+                </a>
               </div>
             </div>
           </div>

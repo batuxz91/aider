@@ -1,5 +1,8 @@
 {
-  "/registro/page": "app/registro/page.js",
+  "/not-found": "app/not-found.js",
+  "/api/auth/[...nextauth]/route": "app/api/auth/[...nextauth]/route.js",
   "/page": "app/page.js",
-  "/precios/page": "app/precios/page.js"
+  "/dashboard/configuracion/page": "app/dashboard/configuracion/page.js",
+  "/dashboard/ingresos/page": "app/dashboard/ingresos/page.js",
+  "/dashboard/page": "app/dashboard/page.js"
 }
