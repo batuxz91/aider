@@ -42,7 +42,7 @@ export const authOptions: NextAuthOptions = {
   callbacks: {
     async jwt({ token, user, account }) {
       if (user && account) {
-        token.accessToken = user.accessToken
+        token.accessToken = (user as any).accessToken
         token.userId = user.id
       }
       return token
@@ -82,7 +82,6 @@ export const authOptions: NextAuthOptions = {
   },
   pages: {
     signIn: '/login',
-    signUp: '/register',
   },
   session: {
     strategy: 'jwt',

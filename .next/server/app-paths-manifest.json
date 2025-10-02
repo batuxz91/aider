@@ -1,7 +1,16 @@
 {
-  "/not-found": "app/not-found.js",
+  "/_not-found": "app/_not-found.js",
+  "/(marketing)/blog/page": "app/(marketing)/blog/page.js",
+  "/(marketing)/contacto/page": "app/(marketing)/contacto/page.js",
+  "/(marketing)/servicios-agropecuarios/page": "app/(marketing)/servicios-agropecuarios/page.js",
+  "/(marketing)/precios/page": "app/(marketing)/precios/page.js",
+  "/(marketing)/servicios/page": "app/(marketing)/servicios/page.js",
+  "/(marketing)/sobre-nosotros/page": "app/(marketing)/sobre-nosotros/page.js",
   "/api/auth/[...nextauth]/route": "app/api/auth/[...nextauth]/route.js",
   "/page": "app/page.js",
+  "/test-api/page": "app/test-api/page.js",
+  "/(auth)/login/page": "app/(auth)/login/page.js",
+  "/(auth)/register/page": "app/(auth)/register/page.js",
   "/dashboard/configuracion/page": "app/dashboard/configuracion/page.js",
   "/dashboard/ingresos/page": "app/dashboard/ingresos/page.js",
   "/dashboard/page": "app/dashboard/page.js"

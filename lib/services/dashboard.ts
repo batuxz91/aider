@@ -26,7 +26,12 @@ export class DashboardService {
     netProfit: number
     profitMargin: number
   }> {
-    const response = await apiClient.get('/dashboard/summary', { businessId })
+    const response = await apiClient.get<{
+      totalIncome: number
+      totalExpenses: number
+      netProfit: number
+      profitMargin: number
+    }>('/dashboard/summary', { businessId })
     return response.data
   }
 
@@ -40,7 +45,15 @@ export class DashboardService {
     expenseTrend: 'up' | 'down' | 'stable'
     incomeTrend: 'up' | 'down' | 'stable'
   }> {
-    const response = await apiClient.get('/dashboard/metrics', { businessId })
+    const response = await apiClient.get<{
+      totalProjects: number
+      activeProjects: number
+      totalClients: number
+      totalProviders: number
+      monthlyGrowth: number
+      expenseTrend: 'up' | 'down' | 'stable'
+      incomeTrend: 'up' | 'down' | 'stable'
+    }>('/dashboard/metrics', { businessId })
     return response.data
   }
 
@@ -65,7 +78,20 @@ export class DashboardService {
       profit: number
     }>
   }> {
-    const response = await apiClient.get('/dashboard/charts-data', { businessId, year })
+    const response = await apiClient.get<{
+      monthlyData: MonthlyData[]
+      categoryBreakdown: Array<{
+        category: string
+        amount: number
+        percentage: number
+      }>
+      projectComparison: Array<{
+        project: Business
+        income: number
+        expenses: number
+        profit: number
+      }>
+    }>('/dashboard/charts-data', { businessId, year })
     return response.data
   }
 }

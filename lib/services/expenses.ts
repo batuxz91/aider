@@ -60,7 +60,16 @@ export class ExpenseService {
       count: number
     }>
   }> {
-    const response = await apiClient.get('/expenses/summary', filters)
+    const response = await apiClient.get<{
+      totalAmount: number
+      count: number
+      averageAmount: number
+      byCategory: Array<{
+        category: ExpenseCategory
+        totalAmount: number
+        count: number
+      }>
+    }>('/expenses/summary', filters)
     return response.data
   }
 
@@ -70,7 +79,11 @@ export class ExpenseService {
     totalAmount: number
     count: number
   }>> {
-    const response = await apiClient.get('/expenses/by-category', filters)
+    const response = await apiClient.get<Array<{
+      category: ExpenseCategory
+      totalAmount: number
+      count: number
+    }>>('/expenses/by-category', filters)
     return response.data
   }
 }
